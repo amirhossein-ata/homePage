@@ -3,7 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
-    <title>Home Page</title>
+    <title>Edit Page</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/indexStyle.css">
     <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
@@ -106,8 +106,8 @@
     </style>
 </head>
 <body>
-<div class="container mb-5">
-    <nav class="navbar navbar-light navbar-expand-md bg-transparent text-center" >
+<div class="container-fluid mb-5">
+    <nav class="navbar navbar-light navbar-expand-md bg-transparent text-center">
         <a class="navbar-brand" href="#">اسم رستوران</a>
         <button class="navbar-toggler navbar- " type="button" data-toggle="collapse" data-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
@@ -131,35 +131,80 @@
         </div>
     </nav>
 </div>
-<div class="container " style="border: 10px solid rgba(170,161,191,0.38);">
+<div class="container" style="border: 10px solid rgba(170,161,191,0.38);">
     <div class="card text-dark mt-3">
-        <img class="card-img" src="images/menu-instagram.jpg" alt="Card image">
-        <div class="card-img-overlay">
+        <img class="card-img" src="images/menu-instagram.jpg" style="opacity: .5" alt="Card image">
+        <div class="card-img-overlay h-100">
+            <div class="row  justify-content-center align-items-center" style="height: inherit">
+                <div class="form-group">
+                    <input type="file" class="form-control-file" id="image1" aria-describedby="fileHelp">
+                </div>
+            </div>
         </div>
     </div>
     <div class=" mt-5 text-center justify-content-center slideanim ">
-        <p class="w-50 offset-3">در این قسمت توضیحات کلی درباره ی رستوران داده میشود در این قسمت توضیحات کلی درباره ی
-            رستوران داده میشود در این قسمت توضیحات کلی درباره ی رستوران داده میشود </p><br>
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="در این جا توضیحاتی کلی درباره ی رستوران خود وارد کنید">
+        </div>
         <button class="btn btn-outline-dark">رزرو</button>
     </div>
     <div class="row mt-5">
         <div class="col-md-6 text-center" style="height:inherit;">
             <div class="card col-md-12" style="border: none;">
-                <img class="card-img img-fluid" src="images/uno.jpg">
+                <img class="card-img img-fluid" style="opacity:.5;" src="images/uno.jpg">
+                <div class="card-img-overlay h-100">
+                    <div class="row  justify-content-center align-items-center" style="height: inherit">
+                        <div class="form-group">
+                            <input type="file" class="form-control-file" id="image2"
+                                   aria-describedby="fileHelp">
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="card d-sm-none d-md-block col-md-9  offset-md-3 mt-5" style="border: none;">
-                <img class="card-img img-fluid fadeInanim" src="images/dolce.jpg">
+                <img class="card-img img-fluid fadeInanim" style="opacity: .5" src="images/dolce.jpg">
+                <div class="card-img-overlay h-100">
+                    <div class="row  justify-content-center align-items-center" style="height: inherit">
+                        <div class="form-group">
+                            <input type="file" class="form-control-file" id="image3" aria-describedby="fileHelp">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="col-md-6 d-md-block d-sm-none text-center" style="height:inherit">
             <div class="col-md-8 mt-5 mb-3 fadeInanim">
-                <img class="img-fluid" src="images/fish.jpg">
+                <img class="img-fluid" style="opacity:.5" src="images/fish.jpg">
+                <div class="card-img-overlay h-100">
+                    <div class="row  justify-content-center align-items-center" style="height: inherit">
+                        <div class="form-group">
+                            <input type="file" class="form-control-file" id="image4"
+                                   aria-describedby="fileHelp">
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="col-md-12 mt-5 fadeInanim">
-                <img class="img-fluid" src="images/filetto.jpg">
+                <img class="img-fluid" style="opacity:.5;" src="images/filetto.jpg">
+                <div class="card-img-overlay h-100">
+                    <div class="row  justify-content-center align-items-center" style="height: inherit">
+                        <div class="form-group">
+                            <input type="file" class="form-control-file" id="image5"
+                                   aria-describedby="fileHelp">
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="col-md-10 mt-5 mb-3 fadeInanim">
-                <img class="img-fluid" src="images/risotto.jpg">
+                <img class="img-fluid" style="opacity:.5;" src="images/risotto.jpg">
+                <div class="card-img-overlay h-100">
+                    <div class="row  justify-content-center align-items-center" style="height: inherit">
+                        <div class="form-group">
+                            <input type="file" class="form-control-file" id="image6"
+                                   aria-describedby="fileHelp">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -168,23 +213,38 @@
 
             <div class="text-center m-3">
                 <h3>منو</h3>
-                <p>تو این قسمت اگه خواستن میتونن در حد ۳,۴ تا جمله در مورد منو توضیح بدن</p>
+                <div class="form-group">
+                    <input type="text" class="form-control"
+                           placeholder="در این جا توضیحاتی کلی درباره ی منوی رستوران خود وارد کنید">
+                </div>
+
             </div>
             <div class="col-md-12 col-12 col-sm-12">
                 <div class="card text-dark mt-3" style="border: none ;height: inherit">
                     <img class="card-img img-fluid fadeInanim" src="images/menu.jpeg" alt="Card image"
-                         style="height: inherit">
-                    <div class="card-img-overlay">
+                         style="height: inherit;opacity: .5">
+                    <div class="card-img-overlay h-100">
+                        <div class="row  justify-content-center align-items-center" style="height: inherit">
+                            <div class="form-group">
+                                <input type="file" class="form-control-file" id="image7"
+                                       aria-describedby="fileHelp">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <div class="card text-dark mt-3" style="border: none">
-        <img class="card-img" src="images/social-1.jpg" alt="Card image">
+        <img class="card-img" src="images/social-1.jpg" style="opacity: .5" alt="Card image">
         <div class="card-img-overlay">
-            <div class="row justify-content-center align-items-end" style="height: 100%">
-                <div class="row breadcrumb bg-light text-dark">
+            <div class="justify-content-center h-100">
+                <div class="row  justify-content-center align-items-center h-75">
+                    <div class="form-group">
+                        <input type="file" class="form-control-file" id="image8" aria-describedby="fileHelp">
+                    </div>
+                </div>
+                <div class="row breadcrumb bg-transparent justify-content-center text-dark h-25 align-items-end">
                     <a class="breadcrumb-item " href="#">Facebook</a>
                     <a class="breadcrumb-item " href="#">Instagram</a>
                 </div>
@@ -197,14 +257,24 @@
         <div class="col-md-6 col-sm-12 d-md-block ">
             <div class="card text-dark mt-4" style="border: none ;height: inherit">
                 <img class="card-img img-fluid fadeInanim" src="images/atmosfera1.jpg" alt="Card image"
-                     style="height: inherit">
-                <div class="card-img-overlay">
+                     style="height: inherit ; opacity:.5;">
+                <div class="card-img-overlay h-100">
+                    <div class="row  justify-content-center align-items-center" style="height: inherit">
+                        <div class="form-group">
+                            <input type="file" class="form-control-file" id="image9" aria-describedby="fileHelp">
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="card text-dark mt-4" style="border: none ;height: inherit">
                 <img class="card-img img-fluid fadeInanim" src="images/atmosfera5.jpg" alt="Card image"
-                     style="height: inherit">
-                <div class="card-img-overlay">
+                     style="height: inherit;opacity:.5;">
+                <div class="card-img-overlay h-100">
+                    <div class="row  justify-content-center align-items-center" style="height: inherit">
+                        <div class="form-group">
+                            <input type="file" class="form-control-file" id="image10" aria-describedby="fileHelp">
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -213,13 +283,25 @@
             <h3 class="card-title d-sm-none d-md-block mb-5 text-center">فضای رستوران</h3>
             <div class="card text-dark mt-4" style="border: none ;height: inherit">
                 <img class="card-img img-fluid fadeInanim" src="images/atmosfera.jpg" alt="Card image"
-                     style="height: inherit">
-                <div class="card-img-overlay"></div>
+                     style="height: inherit;opacity:.5;">
+                <div class="card-img-overlay h-100">
+                    <div class="row  justify-content-center align-items-center" style="height: inherit">
+                        <div class="form-group">
+                            <input type="file" class="form-control-file" id="image11" aria-describedby="fileHelp">
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="card text-dark mt-4" style="border: none ;height: inherit">
                 <img class="card-img img-fluid fadeInanim" src="images/atmosfera6.jpg" alt="Card image"
-                     style="height: inherit">
-                <div class="card-img-overlay"></div>
+                     style="height: inherit;opacity:.5;">
+                <div class="card-img-overlay h-100">
+                    <div class="row  justify-content-center align-items-center" style="height: inherit">
+                        <div class="form-group">
+                            <input type="file" class="form-control-file" id="image12" aria-describedby="fileHelp">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
